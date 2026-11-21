@@ -4,7 +4,7 @@ config.py — Epic Checker Bot settings
 import os
 
 # ── Telegram ──────────────────────────────────────────────────────────────────
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "9175570180:AAGEpXv5VEFMpGaueQjqbR86ilhBsvNuo0E")
 
 # ── Threading ─────────────────────────────────────────────────────────────────
 THREADS     = 40
@@ -49,6 +49,6 @@ EPIC_DOMAINS = {
 #
 # Get your API key from: https://ghostproxies.net/dashboard
 #
-GHOST_KEY  = os.getenv("GHOST_KEY",  "PASTE_YOUR_KEY_HERE")
+GHOST_KEY  = os.getenv("GHOST_KEY",  "gp_251e6ac9cec905ae83976085b6ccda740bac0f616da60436")
 GHOST_USER = os.getenv("GHOST_USER", "res-any")   # res-any / res-us / res-in / etc.
 GHOST_HOST = "gate.ghostproxies.net:8080"
