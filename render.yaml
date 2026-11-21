@@ -1,0 +1,15 @@
+services:
+  - type: worker                  # background worker — no HTTP port needed for polling bot
+    name: epic-checker-bot
+    runtime: python
+    region: oregon                # free tier region
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TG_BOT_TOKEN
+        sync: false               # Telegram bot token — set manually in Render dashboard
+      - key: GHOST_KEY
+        sync: false               # ghostproxies.net API key — set manually in Render dashboard
+      - key: GHOST_USER
+        sync: false               # optional: res-any (default) / res-us / res-in / etc.
